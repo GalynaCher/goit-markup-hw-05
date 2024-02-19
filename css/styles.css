@@ -717,10 +717,11 @@ a.title-button {
 .title-modal-dialog {
     width: 408px;
     height: 584px;
-    min-height: 30px;
+    min-height: 584px;
     position: absolute;
     top: 50%;
     left: 50%;
+
     transform: translate(-50%, -50%) scale(1);
     border-radius: 4px;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -754,7 +755,16 @@ a.title-button {
 .modal-dialog-cross:focus {
     background-color: #404bbf;
     border: none;
+
+}
+
+.modal-dialog-cross-svg:hover,
+.modal-dialog-cross-svg:focus {
     fill: #ffffff;
+}
+
+.modal-dialog-cross-svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*.title-modal-dialog a[href='#x'] {
@@ -777,9 +787,7 @@ a.title-button {
     fill: white;
 }*/
 
-.modal-dialog-cross-svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .title-modal-dialog-p {
     color: #2E2F42;
@@ -810,8 +818,8 @@ a.title-button {
 }
 
 .modal-dialog-field {
-    width: 100%;
     height: 40px;
+    width: 100%;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     background-color: transparent;
@@ -819,6 +827,15 @@ a.title-button {
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-dialog-field:focus {
+    border-color: #4D5AE5;
+}
+
+/* .modal-dialog-field:hover,
+.modal-dialog-field-textarea:hover {
+    border: 1px solid #4D5AE5
+} */
 
 .title-modal-dialog-icon {
     position: absolute;
@@ -828,7 +845,7 @@ a.title-button {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-dialog-field:hover+.title-modal-dialog-icon {
+.modal-dialog-field:focus+.title-modal-dialog-icon {
     fill: #4D5AE5;
 }
 
@@ -852,14 +869,8 @@ a.title-button {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-dialog-field:focus,
 .modal-dialog-field-textarea:focus {
     border-color: #4D5AE5;
-}
-
-.modal-dialog-field:hover,
-.modal-dialog-field-textarea:hover {
-    border: 1px solid #4D5AE5
 }
 
 .modal-dialog-checkbox {

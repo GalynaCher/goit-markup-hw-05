@@ -457,7 +457,7 @@
 
     <div id="dialog" class="title-backdrop">
       <div class="title-modal-dialog">
-        <button class="modal-dialog-cross">
+        <button type="button" class="modal-dialog-cross">
           <!-- <a href="#x" class="modal-dialog-cross-a"> -->
           <!-- how to close the modal? -->
           <svg width="8" height="8" class="modal-dialog-cross-svg">
@@ -521,21 +521,21 @@
           <div class="modal-dialog-div-comment">
             <label for="user-comment" class="title-modal-dialog-label">
               Comment
-              <textarea
-                name="user-comment"
-                rows="5"
-                placeholder="Text input"
-                id="user-comment"
-                class="modal-dialog-field-textarea"
-              >
-              </textarea>
             </label>
+            <textarea
+              name="user-comment"
+              rows="5"
+              placeholder="Text input"
+              id="user-comment"
+              class="modal-dialog-field-textarea"
+            >
+            </textarea>
           </div>
           <div class="modal-dialog-checkbox">
             <input
               id="user-privacy"
               type="checkbox"
-              value="true;"
+              value="true"
               name="user-privacy"
               class="visually-hidden"
             />
