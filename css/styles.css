@@ -706,7 +706,6 @@ a.title-button {
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
-    /* box-shadow: 0 4 4 0 rgba(0, 0, 0, 0.25); */
     position: fixed;
     top: 0;
     left: 0;
@@ -783,7 +782,6 @@ a.title-button {
 }
 
 .title-modal-dialog-p {
-    /* Body Medium */
     color: #2E2F42;
     font-family: Roboto;
     font-size: 16px;
@@ -834,7 +832,6 @@ a.title-button {
     fill: #4D5AE5;
 }
 
-
 .modal-dialog-div-comment {
     margin-bottom: 16px;
 }
@@ -865,7 +862,6 @@ a.title-button {
     border: 1px solid #4D5AE5
 }
 
-
 .modal-dialog-checkbox {
     margin-bottom: 24px;
 }
@@ -887,14 +883,12 @@ a.title-button {
     align-items: center;
     justify-content: center;
     fill: transparent;
-
 }
 
 .modal-dialog-checkbox-a {
     text-decoration: underline;
     color: #4d5ae5;
 }
-
 
 .modal-dialog-checkbox input:checked+.modal-dialog-checkbox-label .modal-dialog-checkbox-label-icon {
     background-color: #404bbf;
